@@ -1,0 +1,11 @@
+*.exe
+*.dll
+*.lib
+*.lps
+backup
+lib
+*.dbg
+*.class
+*.trc
+*.h
+*.build_artifacts.txt
