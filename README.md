@@ -26,11 +26,12 @@ A test for passing UTF-8 strings from Object Pascal/FreePascal to GraalVM and ba
    javac Main.java
    ```
 4. ```cmd
+   chcp 65001
    native-image -H:Name=libtestutf8 -J-Dfile.encoding=UTF-8 --shared
    ```
-   _Note_: To some encoding problems remove the `-J-D...` parameter
+   _Note_: To see some encoding problems remove the `-J-D...` parameter and or compile with `chcp 1252`
 
 # Building the FreePascal test program
 
-Open the Project `graalutf8.lpr` in `Lazarus IDE` and hit run.  
+Open the Project `graalutf8.lpi` in `Lazarus IDE` and hit run.
 To use the resulting `graalutf8.exe` as a pure console program add at `-ci` parameter.
